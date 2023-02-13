@@ -18,4 +18,4 @@ jobs:
         id: set-time
         
       - name: output time
-        run: echo "It was ${{ steps.set-time }}"
+        run: echo "It was ${{ steps.set-time.output.my_time }}"
