@@ -2,4 +2,14 @@ name: "Hi there World"
 description: "Greetings"
 inputs:
   who-2-greet:
-    
+    description: "Who to greet"
+    required: true
+    default: "Globe"
+outputs:
+  time:
+    description: "The time we said hi"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.who-to-greet }}
