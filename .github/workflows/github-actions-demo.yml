@@ -1,7 +1,6 @@
 name: Github Actions Demo
 on:
   push:
-    branches: main
     branches-ignore: .github
   pull_request:
     branches: main
